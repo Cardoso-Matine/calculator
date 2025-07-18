@@ -15,15 +15,20 @@ body {
 .display {
   background: #222;
   color: #fff;
-  font-size: 2em;
   padding: 20px;
-  text-align: right;
   border-radius: 5px;
   margin-bottom: 20px;
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  overflow: hidden;
+  text-align: right;
+}
+
+.display-content {
+  font-size: 2em;
+  white-space: nowrap; 
+  display: inline-block;
+  max-width: 100%;
+  text-overflow: ellipsis; 
 }
 
 .buttons {

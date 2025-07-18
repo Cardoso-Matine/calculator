@@ -44,6 +44,10 @@ export default function Calculator() {
     setOperation(null);
   };
 
+  const handleBackspace = () => {
+    setInput(input.slice(0, -1)); 
+ };
+
   return (
     <div className="calculator">
       <Display value={input} />
@@ -63,6 +67,7 @@ export default function Calculator() {
         <Button onClick={() => handleNumberClick("1")}>1</Button>
         <Button onClick={() => handleNumberClick("2")}>2</Button>
         <Button onClick={() => handleNumberClick("3")}>3</Button>
+        <Button onClick={handleBackspace} className="backspace">⌫</Button>
         <Button onClick={() => handleNumberClick("0")} className="zero">0</Button>
         <Button onClick={calculate} className="equals">=</Button>
       </div>
