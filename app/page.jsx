@@ -51,9 +51,7 @@ export default function Calculator() {
         <Button onClick={reset} className="ac">AC</Button>
         <Button onClick={() => handleOperation("÷")}>÷</Button>
         <Button onClick={() => handleOperation("×")}>×</Button>
-
         <Button onClick={() => handleNumberClick(".")}>.</Button>
-
         <Button onClick={() => handleNumberClick("7")}>7</Button>
         <Button onClick={() => handleNumberClick("8")}>8</Button>
         <Button onClick={() => handleNumberClick("9")}>9</Button>
@@ -65,9 +63,7 @@ export default function Calculator() {
         <Button onClick={() => handleNumberClick("1")}>1</Button>
         <Button onClick={() => handleNumberClick("2")}>2</Button>
         <Button onClick={() => handleNumberClick("3")}>3</Button>
-        
         <Button onClick={() => handleNumberClick("0")} className="zero">0</Button>
-        
         <Button onClick={calculate} className="equals">=</Button>
       </div>
     </div>
