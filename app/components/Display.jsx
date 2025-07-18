@@ -3,7 +3,9 @@
 export default function Display({ value }) {
   return (
     <div className="display">
-      {value || "0"}
+      <span className="display-content">
+        {value || "0"}
+      </span>
     </div>
   );
 }

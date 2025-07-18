@@ -1,10 +1,14 @@
+body {
+  background-color: black;
+}
+
 .calculator {
   width: 320px;
   margin: 50px auto;
   border: 2px solid #333;
   border-radius: 10px;
   padding: 20px;
-  background: #f0f0f0;
+  background: hwb(0 0% 100%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -34,8 +38,9 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background: #fff;
+  background: #3a3838;
   transition: background 0.3s;
+  color: white;
 }
 
 .button:hover {
